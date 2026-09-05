@@ -2,8 +2,6 @@
 layout: about
 title: Home
 permalink: /
-nav: true
-nav_order: 1
 subtitle: Master's Student in Electrical Engineering<br>University of Electronic Science and Technology of China (UESTC)
 
 profile:
