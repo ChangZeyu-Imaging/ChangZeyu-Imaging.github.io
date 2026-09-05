@@ -7,12 +7,24 @@ nav: true
 nav_order: 2
 ---
 
-My research interests lie broadly in computational imaging and computational optics. I am particularly interested in combining physical imaging models, inverse methods, and computational algorithms to recover information that is difficult to obtain directly with conventional imaging systems.
+My research lies broadly at the intersection of computational imaging, computational optics, and inverse problems. I am particularly interested in jointly considering physical image formation and computational reconstruction to develop compact imaging systems with enhanced imaging capabilities.
 
-## [Single-shot Lensless 3D Imaging]({% link _projects/single-shot-lensless-3d-imaging.md %})
+## Lensless Computational Imaging
 
-This project investigates the joint reconstruction of all-in-focus images and depth from a single lensless measurement. It focuses on physics-constrained computational reconstruction for compact imaging systems.
+Lensless imaging systems replace conventional imaging optics with coded modulation and computational reconstruction. Their depth-dependent image formation can provide information for recovering both scene appearance and depth from encoded sensor measurements.
 
-## Continuous-depth Modeling for Lensless Imaging
+### Single-shot Lensless 3D Imaging
 
-This project studies depth-dependent image formation when scene depth varies continuously. It explores modeling beyond discrete PSF calibration planes to support computational reconstruction across depth.
+Joint reconstruction of an all-in-focus image and scene depth from a single lensless measurement. This work explores physics-constrained scene representations that connect image and depth recovery with the depth-dependent image-formation model.
+
+> **Representative figure:** To be added.
+>
+> **Representative publication and paper/code links:** To be added when available.
+
+### Continuous-depth Modeling for Lensless Imaging
+
+Investigation of continuously varying depth-dependent image formation beyond discrete PSF calibration planes, with the goal of reducing the mismatch between discrete simulation models and real continuous-depth imaging.
+
+> **Representative figure:** To be added.
+>
+> **Related publication/work and paper/code links:** To be added when available.

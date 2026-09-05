@@ -3,7 +3,7 @@ layout: page
 title: Single-shot Lensless 3D Imaging
 description: Joint image and depth reconstruction from a single lensless measurement.
 permalink: /research/single-shot-lensless-3d-imaging/
-published: true
+published: false
 nav: false
 related_publications: false
 ---

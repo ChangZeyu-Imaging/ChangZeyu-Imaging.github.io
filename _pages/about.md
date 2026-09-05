@@ -24,11 +24,11 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a master's student in Electrical Engineering at the University of Electronic Science and Technology of China (UESTC).
+**Computational Imaging · Computational Optics**
 
-My research focuses on computational imaging, with interests in computational optics, lensless imaging, inverse problems, and physics-based image reconstruction.
+<!-- Representative research visual placeholder: add a verified research figure here when available. -->
 
-My current work explores computational methods for recovering image and depth information from compact optical imaging systems.
+My research interests lie broadly in computational imaging and computational optics. I am interested in combining physical image formation, inverse methods, and computational algorithms to recover information that is difficult to obtain directly with conventional imaging systems.
 
 ## Research interests
 
@@ -38,12 +38,4 @@ My current work explores computational methods for recovering image and depth in
 - Inverse Problems
 - Physics-based Image Reconstruction
 
-## Selected Research
-
-### [Single-shot Lensless 3D Imaging]({% link _projects/single-shot-lensless-3d-imaging.md %})
-
-Joint reconstruction of all-in-focus images and depth from a single lensless measurement using physics-constrained computational reconstruction.
-
-### Continuous-depth Modeling for Lensless Imaging
-
-Modeling continuously varying depth-dependent image formation beyond discrete PSF calibration planes.
+[Explore my research →]({% link _pages/projects.md %})
