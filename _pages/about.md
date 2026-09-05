@@ -4,7 +4,7 @@ title: Home
 permalink: /
 nav: true
 nav_order: 1
-subtitle: Master's Student in Electrical Engineering
+subtitle: Master's Student in Electrical Engineering<br>University of Electronic Science and Technology of China (UESTC)
 
 profile:
   align: right
@@ -13,7 +13,7 @@ profile:
   more_info:
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
-social: false # includes social icons at the bottom of the page
+social: true # includes social icons at the bottom of the page
 
 announcements:
   enabled: false # includes a list of news items
@@ -28,9 +28,9 @@ latest_posts:
 
 I am a master's student in Electrical Engineering at the University of Electronic Science and Technology of China (UESTC).
 
-My research focuses on computational imaging, with particular interests in computational optics, lensless imaging, inverse problems, and physics-based image reconstruction.
+My research focuses broadly on computational imaging, with particular interests in computational optics, lensless imaging, inverse problems, and physics-based image reconstruction. I am interested in combining physical imaging models with computational methods to recover information that is difficult to obtain directly using conventional imaging systems.
 
-My current work explores computational methods for recovering image and depth information from compact optical imaging systems, with an emphasis on incorporating physical forward models into reconstruction.
+My current research focuses on computational approaches for recovering image and depth information from compact optical imaging systems.
 
 ## Research interests
 

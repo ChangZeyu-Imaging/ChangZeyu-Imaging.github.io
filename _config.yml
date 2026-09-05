@@ -7,8 +7,7 @@ first_name: Zeyu
 last_name: Chang
 contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Academic website of Zeyu Chang, a master's student in Electrical Engineering at the University of Electronic Science and Technology of China (UESTC),
-  focusing on computational imaging.
+  Academic website of Zeyu Chang, focusing on computational imaging, computational optics, and inverse problems.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
