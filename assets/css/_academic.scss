@@ -1,0 +1,488 @@
+// Local presentation layer. Theme layouts, behavior, fonts, and content remain native.
+// Use paired light/dark tokens; all components inherit these rather than fixed colors.
+:root {
+  --global-bg-color: #fcfcfb;
+  --global-text-color: #252a30;
+  --global-text-color-light: #626b74;
+  --global-theme-color: #285f7d;
+  --global-hover-color: #204f69;
+  --global-divider-color: #dce1e4;
+  --global-card-bg-color: var(--global-bg-color);
+  --academic-surface: #f2f4f5;
+  --academic-reading-width: 70ch;
+}
+
+html[data-theme="dark"] {
+  --global-bg-color: #191d22;
+  --global-text-color: #e5e9ed;
+  --global-text-color-light: #a7b1bc;
+  --global-theme-color: #91bfda;
+  --global-hover-color: #b4d7eb;
+  --global-divider-color: #363f49;
+  --global-card-bg-color: var(--global-bg-color);
+  --academic-surface: #222830;
+}
+
+body {
+  font-size: 1.025rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+body.sticky-bottom-footer {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  padding-inline: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+.container[role="main"] {
+  width: 100%;
+  margin-top: clamp(2.75rem, 6vw, 4.5rem);
+  margin-bottom: clamp(3.5rem, 7vw, 6rem);
+  flex: 1 0 auto;
+}
+
+.post > .post-header {
+  margin-bottom: 2.75rem;
+
+  .post-title {
+    margin: 0 0 0.8rem;
+    font-size: clamp(2.5rem, 5vw, 3.4rem);
+    line-height: 1.15;
+    font-weight: 500;
+    letter-spacing: -0.045em;
+  }
+
+  .desc,
+  .post-description {
+    max-width: var(--academic-reading-width);
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--global-text-color-light);
+  }
+}
+
+:where(.post > article) {
+  p {
+    max-width: var(--academic-reading-width);
+    margin-block: 0 1.25rem;
+  }
+
+  h2 {
+    margin-block: 3.25rem 1.2rem;
+    font-size: clamp(1.6rem, 3vw, 2rem);
+    font-weight: 500;
+    line-height: 1.3;
+    letter-spacing: -0.025em;
+  }
+
+  h3 {
+    margin-block: 2rem 0.85rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: -0.015em;
+  }
+
+  a {
+    text-underline-offset: 0.22em;
+    text-decoration-thickness: 1px;
+  }
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 4px;
+}
+
+// Keep the native header, active-link logic, menu toggle, search, and theme controls.
+#navbar {
+  opacity: 1;
+
+  .navbar-brand {
+    font-size: 1.15rem;
+    font-weight: 500;
+    letter-spacing: -0.025em;
+  }
+
+  .navbar-menu-list {
+    gap: 0.55rem;
+  }
+
+  .nav-link {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    padding: 0.7rem 0.4rem;
+  }
+
+  .nav-item.active > .nav-link {
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 0.6em;
+  }
+
+  #search-toggle,
+  #light-toggle {
+    min-width: 2.75rem;
+    min-height: 2.75rem;
+  }
+
+  #light-toggle {
+    transform: none;
+  }
+}
+
+// :has scopes native about-layout elements without copying the upstream layout.
+.post:has(.academic-home) {
+  position: relative;
+
+  > .post-header {
+    padding-inline-end: 16rem;
+    margin-bottom: 1.6rem;
+
+    .post-title {
+      font-size: clamp(3rem, 6vw, 4.1rem);
+      letter-spacing: -0.05em;
+    }
+  }
+
+  .profile {
+    position: absolute;
+    inset-block-start: 0.25rem;
+    inset-inline-end: 0;
+    width: 12rem;
+    margin: 0;
+
+    img {
+      height: auto;
+      border: 1px solid var(--global-divider-color);
+      border-radius: 4px;
+      box-shadow: none;
+    }
+  }
+
+  .social {
+    margin-top: 2.5rem;
+    text-align: start;
+
+    .contact-icons {
+      display: flex;
+      gap: 1rem;
+      font-size: 1.65rem;
+      line-height: 1;
+
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 2.75rem;
+        min-height: 2.75rem;
+        border: 1px solid var(--global-divider-color);
+        border-radius: 4px;
+      }
+    }
+
+    .contact-note:empty {
+      display: none;
+    }
+  }
+}
+
+.academic-home {
+  .research-identity {
+    max-width: calc(100% - 16rem);
+    margin-bottom: 6rem;
+    color: var(--global-theme-color);
+    font-size: 0.9rem;
+
+    strong {
+      color: inherit;
+      font-weight: 500;
+    }
+  }
+
+  .research-vision {
+    font-size: 1.15rem;
+    line-height: 1.8;
+  }
+
+  .research-interests {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.45rem 2rem;
+    max-width: var(--academic-reading-width);
+    padding-left: 1.15rem;
+
+    li::marker {
+      color: var(--global-theme-color);
+    }
+  }
+
+  .research-link {
+    margin-top: 2rem;
+    font-weight: 500;
+  }
+}
+
+// A shared figure space for real images later. Placeholders are labels, not artwork.
+.research-visual {
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+
+  img,
+  video {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: none;
+  }
+
+  figcaption,
+  .caption {
+    margin-block: 0.65rem 0;
+    font-size: 0.85rem;
+    line-height: 1.6;
+    text-align: start;
+    color: var(--global-text-color-light);
+  }
+}
+
+.figure-placeholder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  aspect-ratio: 8 / 5;
+  padding: 1.5rem;
+  background: var(--academic-surface);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 4px;
+  text-align: center;
+  font-size: 0.9rem;
+
+  span {
+    color: var(--global-text-color-light);
+  }
+
+  .placeholder-note {
+    font-size: 0.8rem;
+  }
+}
+
+.home-visual {
+  margin-bottom: 2.75rem;
+
+  .figure-placeholder {
+    aspect-ratio: 5 / 1;
+    min-height: 9rem;
+  }
+}
+
+.research-direction {
+  margin-top: 3.5rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--global-divider-color);
+
+  > h2 {
+    margin-top: 0;
+  }
+}
+
+.research-work {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.4fr);
+  align-items: start;
+  gap: 2.5rem;
+  margin-top: 2.75rem;
+  padding-top: 2.75rem;
+  border-top: 1px solid var(--global-divider-color);
+
+  h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
+  }
+
+  .research-work-text {
+    min-width: 0;
+  }
+
+  .research-resources {
+    margin-block: 1.5rem 0;
+    color: var(--global-text-color-light);
+    font-size: 0.85rem;
+    line-height: 1.65;
+
+    strong {
+      color: inherit;
+      font-weight: 500;
+    }
+  }
+}
+
+// Retain native bibliography markup, filters, previews, and action behavior.
+.publications {
+  h2.bibliography {
+    text-align: start;
+    color: var(--global-text-color-light);
+  }
+
+  ol.bibliography li {
+    padding-block: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--global-divider-color);
+
+    .title {
+      font-size: 1.1rem;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    .author,
+    .periodical {
+      color: var(--global-text-color-light);
+      font-size: 0.925rem;
+    }
+
+    .preview {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+      box-shadow: none;
+    }
+
+    .links a.btn {
+      padding: 0.2rem 0.6rem;
+      margin-top: 0.35rem;
+      border-color: var(--global-divider-color);
+      border-radius: 3px;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+.cv-document,
+.personal-index {
+  max-width: var(--academic-reading-width);
+
+  h2 {
+    padding-top: 1.75rem;
+    border-top: 1px solid var(--global-divider-color);
+  }
+}
+
+.cv-document > h2:first-child,
+.learning-notes > h2:first-child {
+  margin-top: 0;
+}
+
+.notes-topics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 2rem;
+  list-style: none;
+  padding-left: 0;
+  margin-block: 1.5rem;
+
+  li {
+    padding-block: 0.8rem;
+    border-bottom: 1px solid var(--global-divider-color);
+  }
+}
+
+.post .secondary-text {
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+}
+
+footer.sticky-bottom {
+  padding-block: 1.5rem;
+  margin-top: 0;
+  font-size: 0.8rem;
+  line-height: 1.7;
+
+  .container {
+    text-align: start;
+    color: var(--global-text-color-light);
+  }
+
+  a {
+    color: var(--global-text-color-light);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #navbar {
+    .navbar-menu-list {
+      gap: 0.15rem;
+    }
+
+    .navbar-brand {
+      font-size: 1rem;
+    }
+
+    .nav-link {
+      padding-inline: 0.3rem;
+      font-size: 0.85rem;
+    }
+  }
+
+  .research-work {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .post:has(.academic-home) {
+    > .post-header {
+      padding-inline-end: 0;
+    }
+
+    .profile {
+      position: static;
+      float: none;
+      width: 10rem;
+      margin: 0 0 2rem;
+    }
+  }
+
+  .academic-home .research-identity {
+    max-width: none;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  #navbar {
+    .navbar-menu-list {
+      gap: 0;
+      padding-block: 0.6rem;
+    }
+
+    .nav-link {
+      padding: 0.8rem 0;
+      font-size: 1rem;
+    }
+
+    .nav-item.active > .nav-link {
+      text-underline-offset: 0.3em;
+    }
+  }
+
+  .academic-home .research-interests,
+  .notes-topics {
+    grid-template-columns: 1fr;
+  }
+}

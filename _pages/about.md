@@ -24,18 +24,33 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-**Computational Imaging · Computational Optics**
+<div class="academic-home" markdown="1">
 
-<!-- Representative research visual placeholder: add a verified research figure here when available. -->
+**Computational Imaging · Computational Optics**
+{: .research-identity}
+
+<!-- Replace the placeholder with a real figure using the native figure.liquid include. -->
+<figure class="research-visual home-visual">
+  <div class="figure-placeholder">
+    <span>Representative research visual</span>
+    <span class="placeholder-note">Figure to be added</span>
+  </div>
+</figure>
 
 My research interests lie broadly in computational imaging and computational optics. I am interested in combining physical image formation, inverse methods, and computational algorithms to recover information that is difficult to obtain directly with conventional imaging systems.
+{: .research-vision}
 
 ## Research interests
 
-- Computational Imaging
-- Computational Optics
-- Lensless Imaging
-- Inverse Problems
-- Physics-based Image Reconstruction
+<ul class="research-interests">
+  <li>Computational Imaging</li>
+  <li>Computational Optics</li>
+  <li>Lensless Imaging</li>
+  <li>Inverse Problems</li>
+  <li>Physics-based Image Reconstruction</li>
+</ul>
 
 [Explore my research →]({% link _pages/projects.md %})
+{: .research-link}
+
+</div>
