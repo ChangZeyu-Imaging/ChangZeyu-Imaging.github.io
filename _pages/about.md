@@ -40,7 +40,7 @@ My current work explores computational methods for recovering image and depth in
 
 ## Selected Research
 
-### Single-shot Lensless 3D Imaging
+### [Single-shot Lensless 3D Imaging]({% link _projects/single-shot-lensless-3d-imaging.md %})
 
 Joint reconstruction of all-in-focus images and depth from a single lensless measurement using physics-constrained computational reconstruction.
 

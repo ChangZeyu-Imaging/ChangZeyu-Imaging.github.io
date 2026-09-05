@@ -9,7 +9,7 @@ nav_order: 2
 
 My research interests lie broadly in computational imaging and computational optics. I am particularly interested in combining physical imaging models, inverse methods, and computational algorithms to recover information that is difficult to obtain directly with conventional imaging systems.
 
-## Single-shot Lensless 3D Imaging
+## [Single-shot Lensless 3D Imaging]({% link _projects/single-shot-lensless-3d-imaging.md %})
 
 This project investigates the joint reconstruction of all-in-focus images and depth from a single lensless measurement. It focuses on physics-constrained computational reconstruction for compact imaging systems.
 
