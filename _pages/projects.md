@@ -11,8 +11,8 @@ My research interests lie broadly in computational imaging and computational opt
 
 ## Single-shot Lensless 3D Imaging
 
-Project description and results will be added.
+This project investigates the joint reconstruction of all-in-focus images and depth from a single lensless measurement. It focuses on physics-constrained computational reconstruction for compact imaging systems.
 
 ## Continuous-depth Modeling for Lensless Imaging
 
-Project description and results will be added.
+This project studies depth-dependent image formation when scene depth varies continuously. It explores modeling beyond discrete PSF calibration planes to support computational reconstruction across depth.
