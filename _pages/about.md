@@ -6,7 +6,7 @@ subtitle: Master's Student in Electrical Engineering<br>University of Electronic
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: zeyu_profile.png
   image_circular: false # crops the image to make it circular
   more_info:
 
