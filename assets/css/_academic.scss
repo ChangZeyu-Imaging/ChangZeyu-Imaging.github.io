@@ -135,6 +135,14 @@ input:focus-visible {
     min-height: 2.75rem;
   }
 
+  #search-toggle .nav-link {
+    font-size: 0;
+
+    i {
+      font-size: 0.9rem;
+    }
+  }
+
   #light-toggle {
     transform: none;
   }
