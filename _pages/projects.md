@@ -66,6 +66,14 @@ This work investigates joint reconstruction of an all-in-focus image and scene d
 
 Low-light conditions make lensless reconstruction particularly challenging because measurement noise can strongly interfere with computational inversion and per-measurement optimization.
 
+<div class="research-work" markdown="1">
+
+<figure class="research-visual">
+  <img src="{{ '/assets/img/research/low_light_lensless.png' | relative_url }}" alt="Representative visual for unsupervised lensless reconstruction in low-light conditions">
+</figure>
+
+<div class="research-work-text" markdown="1">
+
 ### Unsupervised Lensless Reconstruction in Low-Light Conditions
 
 _Mar. 2025 – Sept. 2025_
@@ -75,5 +83,8 @@ This work investigates unsupervised lensless reconstruction under low-SNR measur
 **Representative Publication:**
 
 Zeyu Chang\*, Tianjiao Zeng, Xiaoling Zhang. “Unsupervised Lensless Image Reconstruction Driven by Structure Consistency Modeling in Low-Light Scenarios.” Fifth International Computational Imaging Conference (CITA 2025), Proc. SPIE 14000, 1400022, 2026.
+
+</div>
+</div>
 
 </section>
