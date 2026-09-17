@@ -9,8 +9,8 @@ description: Curriculum Vitae of Zeyu Chang.
 
 <div class="cv-document" markdown="1">
 
-## Curriculum Vitae
+Please find my academic CV below.
 
-My academic CV will be available here.
+<a href="{{ '/assets/pdf/Zeyu_Chang_CV.pdf' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">View / Download CV</a>
 
 </div>
