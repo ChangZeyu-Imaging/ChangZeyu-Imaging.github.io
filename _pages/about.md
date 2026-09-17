@@ -29,14 +29,6 @@ latest_posts:
 **Computational Imaging · Computational Optics**
 {: .research-identity}
 
-<!-- Replace the placeholder with a real figure using the native figure.liquid include. -->
-<figure class="research-visual home-visual">
-  <div class="figure-placeholder">
-    <span>Representative research visual</span>
-    <span class="placeholder-note">Figure to be added</span>
-  </div>
-</figure>
-
 My research interests lie broadly in computational imaging and computational optics. I am interested in combining physical image formation, inverse methods, and computational algorithms to recover information that is difficult to obtain directly with conventional imaging systems.
 {: .research-vision}
 

@@ -207,7 +207,7 @@ input:focus-visible {
 .academic-home {
   .research-identity {
     max-width: calc(100% - 16rem);
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
     color: var(--global-theme-color);
     font-size: 0.9rem;
 
@@ -286,15 +286,6 @@ input:focus-visible {
 
   .placeholder-note {
     font-size: 0.8rem;
-  }
-}
-
-.home-visual {
-  margin-bottom: 2.75rem;
-
-  .figure-placeholder {
-    aspect-ratio: 5 / 1;
-    min-height: 9rem;
   }
 }
 
