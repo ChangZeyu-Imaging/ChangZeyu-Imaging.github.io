@@ -13,21 +13,13 @@ nav_order: 5
 
 ## Learning Notes
 
-I keep notes here while learning topics in optics, computational imaging, and related mathematics.
-
-Future notes may be organized around:
+I keep notes here while learning fundamental topics in optics.
 
 <ul class="notes-topics">
+  <li>Applied Optics</li>
   <li>Physical Optics</li>
   <li>Fourier Optics</li>
-  <li>Computational Imaging</li>
-  <li>PSF / OTF / MTF</li>
-  <li>Wave Propagation</li>
-  <li>Inverse Problems</li>
 </ul>
-
-No notes have been published yet.
-{: .secondary-text}
 
 </section>
 
@@ -35,7 +27,7 @@ No notes have been published yet.
 
 ## Beyond Research
 
-More about my interests outside research will be added here.
+Outside research, I enjoy music and sports. I play keyboard in a band and currently practice boxing. I also enjoy playing tennis and basketball in my free time.
 
 <!-- Future personal photos may use research-visual for the same quiet figure treatment. -->
 
