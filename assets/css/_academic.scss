@@ -290,6 +290,8 @@ input:focus-visible {
 }
 
 .research-direction {
+  display: block;
+  width: 100%;
   margin-top: 3.5rem;
   padding-top: 2.5rem;
   border-top: 1px solid var(--global-divider-color);
@@ -297,6 +299,16 @@ input:focus-visible {
   > h2 {
     margin-top: 0;
   }
+
+  > p {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.research-overview {
+  width: 100%;
+  max-width: none;
 }
 
 .research-work {
