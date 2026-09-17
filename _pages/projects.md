@@ -12,7 +12,7 @@ My research focuses on computational imaging, with particular interests in lensl
 
 <section class="research-direction" markdown="1">
 
-## Depth-Aware Lensless Imaging
+## Lensless 3D Imaging
 
 My recent research explores how depth-dependent image formation can be exploited and modeled for three-dimensional lensless imaging. This direction includes both inverse reconstruction from depth-encoded measurements and the physical modeling of continuously varying depth-dependent point spread functions.
 

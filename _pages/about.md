@@ -2,7 +2,7 @@
 layout: about
 title: Home
 permalink: /
-subtitle: Master's Student in Electrical Engineering<br>University of Electronic Science and Technology of China (UESTC)
+subtitle: Master's Student in Information and Communication Engineering<br>University of Electronic Science and Technology of China (UESTC)
 
 profile:
   align: right
