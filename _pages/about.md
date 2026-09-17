@@ -26,21 +26,13 @@ latest_posts:
 
 <div class="academic-home" markdown="1">
 
-**Computational Imaging · Computational Optics**
+## Research Interests
+
+Computational Imaging · Lensless Imaging · Inverse Problems · 3D Reconstruction
 {: .research-identity}
 
-My research interests lie broadly in computational imaging and computational optics. I am interested in combining physical image formation, inverse methods, and computational algorithms to recover information that is difficult to obtain directly with conventional imaging systems.
+I am particularly interested in understanding optical imaging problems from a signal-processing perspective, and in pursuing research that more closely integrates imaging physics, optical principles, and hardware.
 {: .research-vision}
-
-## Research interests
-
-<ul class="research-interests">
-  <li>Computational Imaging</li>
-  <li>Computational Optics</li>
-  <li>Lensless Imaging</li>
-  <li>Inverse Problems</li>
-  <li>Physics-based Image Reconstruction</li>
-</ul>
 
 [Explore my research →]({% link _pages/projects.md %})
 {: .research-link}
