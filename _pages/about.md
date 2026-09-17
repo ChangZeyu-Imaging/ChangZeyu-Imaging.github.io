@@ -31,7 +31,7 @@ latest_posts:
 Computational Imaging · Lensless Imaging · Inverse Problems · 3D Reconstruction
 {: .research-identity}
 
-I am particularly interested in understanding optical imaging problems from a signal-processing perspective, and in pursuing research that more closely integrates imaging physics, optical principles, and hardware.
+I am particularly interested in approaching optical imaging problems from a signal-processing perspective, with an emphasis on understanding the underlying image-formation process and integrating it with optical system design and computational reconstruction.
 {: .research-vision}
 
 [Explore my research →]({% link _pages/projects.md %})
